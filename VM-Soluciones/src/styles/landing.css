@@ -1,0 +1,217 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info--about--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px solid blue;*/
+}
+
+.info--about--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    /*border: green 2px solid;*/
+    color: #383838;
+    font-family: 'Inter';
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.info--about--top {
+    /*border: yellow 2px solid;*/
+    display: flex;
+}
+
+.aboutus--section--title {
+    font-family: 'Roboto Slab'; 
+    color: #142B57;
+    font-weight: 500; 
+    font-size: 30px;
+    /*border: 2px solid blue;*/
+}
+
+.about--top--description {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px green solid;*/
+}
+
+.info--about--top img, .info--about--bottom img {
+    /*border: yellow 2px solid;*/
+    width: 400px;
+}
+
+.info--about--bottom {
+    /*border: red 2px solid;*/
+    display: flex;
+    margin-top: 2%;
+}
+
+
+.paragraph--1 {
+    width: 90%;
+    line-height: 25px;
+    /*border: 2px red solid;*/
+}
+
+.paragraph--2, .paragraph--3 {
+    width: 90%;
+    margin-left: 10%;
+    line-height: 25px;
+}
+
+.paragraph--2--mobile, .paragraph--3--mobile {
+    display: none;
+}
+
+
+.our--services--section, .brands--section, .info--about--wrapper {
+    margin-top: 6%;
+}
+
+.brands--section {
+    margin-bottom: 6%;
+}
+
+#ourstory-btn {
+    border: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    background-color: #27B179;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#ourstory-btn-mobile{
+    display: none;
+}
+
+#ourstory-btn span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+#ourstory-btn span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+#ourstory-btn:hover span {
+padding-right: 25px;
+}
+
+#ourstory-btn:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+#ourstory-btn:hover {background-color: #142B57}
+
+#ourstory-btn:active {
+  background-color: #142B57;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+    
+    .info--about--wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       /* border: green 2px solid;*/
+        color: #383838;
+        font-family: 'Inter';
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+    
+    .info--about--top {
+        /*border: yellow 2px solid;*/
+        display: flex;
+        flex-direction: row;
+        padding: 1%;
+    }
+    
+    .aboutus--section--title {
+        margin-bottom: 0;
+        /*border: 2px solid blue;*/
+    }
+    
+    .about--top--description {
+        margin-left: 2%;
+        /*border: 2px green solid;*/
+    }
+    
+    .info--about--top img{
+        /*border: purple 2px solid;*/
+        width: 230px;
+    }
+
+    #ourstory-btn-mobile{
+        display: flex;
+        border: none;
+        height: 40px;
+        border-radius: 4px;
+        color: white;
+        background-color: #27B179;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+        transition: all 0.5s;
+        cursor: pointer;
+        width: 180px;
+    }
+
+    #ourstory-btn {
+        display: none;
+    }
+
+    .info--about--bottom {
+        /*border: red 2px solid;*/
+        flex-wrap: wrap;
+        margin-top: 2%;
+        padding: 1%;
+    }
+    
+    
+    .info--about--bottom img {
+        width: 47%;
+    }
+
+    .paragraph--2--mobile{
+        display: flex;
+        width: 50%;
+        line-height: 25px;
+        margin-bottom: 0;
+        margin-left: 2%;
+    }
+
+    .paragraph--3--mobile{
+        display: flex;
+        margin: 0;
+        line-height: 25px;
+    }
+
+    .paragraph--1, .paragraph--2--mobile, .paragraph--3--mobile{
+        font-size: 0.7rem;
+    }
+
+    .paragraph--wrappers{
+        display: none;
+    }
+
+    
+  }

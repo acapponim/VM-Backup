@@ -1,0 +1,15 @@
+.strip--container {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+  }
+
+  .strip--image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .strip--container.visible {
+    opacity: 1;
+    transform: translateX(0%);
+  }

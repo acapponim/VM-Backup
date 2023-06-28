@@ -1,0 +1,24 @@
+.carousel--container {
+}
+
+.surveillance--carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.viewing--carousel {
+    display: flex;
+    justify-content: center;
+}
+
+
+.assistance--carousel {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tools--carousel {
+    display: flex;
+    justify-content: center;
+}

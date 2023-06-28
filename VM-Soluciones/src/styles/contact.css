@@ -1,0 +1,65 @@
+.contact--image {
+    position: relative;
+}
+
+.contact--image img{
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.text--overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.text--overlay p {
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab'; 
+    font-weight: 500; 
+}
+
+.info--card {
+    display: flex;
+    /*border: 2px red solid;*/
+    font-family: 'Inter'; 
+}
+
+
+.more--info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9D9D9;
+    width: 50%;
+    color: #142B57;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.contact--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #142B57;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.contact--info {
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .info--card {
+        display: none;
+    }
+  }

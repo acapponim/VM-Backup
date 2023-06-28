@@ -1,0 +1,119 @@
+.hero--cover {
+    background-image: url('../images/hero-image.svg');
+    background-size:cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+}
+
+.navbar--container--landing {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25); 
+    background: rgba(61, 61, 61, 0.24);
+    margin-bottom: 2%;
+  }
+  
+  .navlinks--list--landing {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+  }
+  
+  .navlinks--list--landing li a {
+    text-decoration: none !important;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 700; 
+  }
+
+  .navlinks--list--landing li a:hover {
+    font-size: 1.2rem;
+  }
+
+  .navlinks--list--landing li a {
+    transition: all 0.3s ease;
+  }
+  
+  .logo--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 0.24);
+    padding: 0.5%;
+    margin-bottom: 2%;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25); 
+  }
+
+  .slogan {
+    font-family: 'Inter';
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  #contactus-btn {
+    border-radius: 8px;
+    background: #27B179;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);    
+    border: none;
+    width: 210px;
+    height:45px; 
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  #contactus-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #contactus-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #contactus-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  #contactus-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#contactus-btn:hover {background-color: #142B57}
+
+#contactus-btn:active {
+  background-color: #142B57;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 600px) {
+  .navlinks--list--landing {
+    display: none;
+  }
+
+  
+}

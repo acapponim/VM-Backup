@@ -1,0 +1,136 @@
+.footer--class {
+    background-color: #1D2331;
+    /*border: 2px red solid;*/
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+
+.footer--title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.32px; 
+}
+
+.title--wrapper {
+    /*border: 2px purple solid;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--wrapper {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line--design {
+    width: 80px;
+    padding: 0;
+    margin:0;
+}
+
+.footer--strip {
+    background-color: #161C27;
+    height: 4vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*Services section*/
+.footer--services {
+    /*border: 2px green solid;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.services--list {
+    /*border: 2px red solid;*/
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    line-height: 35px;
+}
+
+/*Contact section*/
+.footer--contact {
+    /*border: 2px green solid;*/
+}
+
+.contact--list {
+    list-style: none;
+    /*border: 2px red solid;*/
+    padding: 0;
+    margin: 0;
+}
+
+.email--info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.email--info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.home--info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home--info img {
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.phone--info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.phone--info img {
+    width: 22px;
+    height: 30px;
+}
+
+/*Links section*/
+.footer--links {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px green solid;*/
+}
+
+.links--list {
+    list-style: none;
+    /*border: 2px red solid;*/
+    padding: 0;
+    margin: 0;
+    line-height: 35px; 
+}
+
+.links--list li a {
+    text-decoration: none !important;
+    color: white;
+  }
+
+  /*Footer strip section*/
+  .footer--strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+  }

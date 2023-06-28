@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.services--background  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url('../images/services-image.svg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+}
+
+.services--title {
+    text-align: center;
+    font-family: 'Roboto Slab'; 
+    color: #142B57;
+    text-align: center;
+    font-weight: 500; 
+    font-size: 30px; 
+}
+
+#viewmore-btn{
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  #viewmore-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  #viewmore-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  #viewmore-btn:hover span {
+    padding-right: 25px;
+  }
+  
+  #viewmore-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#viewmore-btn:hover {background-color: #142B57}
+
+#viewmore-btn:active {
+  background-color: #142B57;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+  @media screen and (max-width: 600px) {
+  .services--background  {
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    background:none;
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+}
+
+}

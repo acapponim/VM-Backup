@@ -1,0 +1,47 @@
+.aboutus--wrapper {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.aboutus--title {
+    align-items: center;
+    font-family: 'Roboto Slab'; 
+    color: #142B57;
+    text-align: center;
+    font-weight: 500; 
+    font-size: 30px; 
+}
+
+.card--wrapper {
+    background-color: #B6CFF5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    width: 65%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .card--wrapper{
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        align-items: center;
+        width: 80%;
+    }
+
+    .aboutus--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    .aboutus--title { 
+        font-size: 1.8rem; 
+    }
+  }

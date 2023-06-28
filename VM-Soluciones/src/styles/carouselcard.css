@@ -1,0 +1,48 @@
+.carousel--card--container {
+    /*border: 2px red solid;*/
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 20%;
+    background-color: #142B57;
+    font-family: 'Inter';
+    height: 48vh;
+    border-radius: 10px;
+}
+
+.carousel--card--container img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text--wrapper {
+    /*border: 2px blue solid;*/
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.text--wrapper h3 {
+    font-size: 1rem;
+    align-self: center;
+    width: 80%;
+}
+
+.text--wrapper p {
+    font-size: 0.8rem;
+    align-self: center;
+    width: 90%;
+    padding-bottom: 5%;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel--card--container {
+        width: 50%;
+        height: 48vh;
+    }
+  }

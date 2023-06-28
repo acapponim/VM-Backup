@@ -1,0 +1,59 @@
+.about--card {
+    /*border: 2px red solid;*/
+    width: 18%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #142B57;
+    border-radius: 10px;
+    color: white;
+    padding: 1.5%;
+    font-family: 'Inter'; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.about--card img {
+    width: 30%;
+}
+
+.about--card h3 {
+    font-size: 1.4rem;
+}
+
+.about--card p {
+    font-size: 0.8rem;
+    line-height: 25px;
+}
+
+.about--card {
+    border: 2px solid transparent; /* Set an initial transparent border */
+    transition: border-color 0.5s ease-in-out; /* Add a transition effect to the border color */
+}
+
+.about--card:hover {
+    animation: pulsate-border 2s infinite; /* Start the pulsating animation */
+    scale: 1.1;
+  }
+  
+  @keyframes pulsate-border {
+    0% {
+      border-color: transparent; /* Start with a transparent border */
+    }
+    50% {
+      border-color: #a1b8e4;; /* Set the color of the pulsating border */
+      box-shadow: 0 0 10px #226fff;; /* Optional: Add a box shadow for a glowing effect */
+    }
+    100% {
+      border-color: transparent; /* End with a transparent border */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .about--card{
+      width: 70%;
+      margin-bottom: 5%;
+      height: 420px;
+    }
+  }

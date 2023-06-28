@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.ourservices--title {
+    align-items: center;
+    font-family: 'Roboto Slab'; 
+    color: #142B57;
+    text-align: center;
+    font-weight: 500; 
+    font-size: 30px; 
+}
+
+@media screen and (max-width: 600px) {
+    .ourservices--title {
+        font-size: 1.8rem; 
+    }
+  }

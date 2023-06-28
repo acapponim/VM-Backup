@@ -1,0 +1,74 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info--bar {
+    background-color: #142B57;
+    width: auto;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.info--bar img {
+    width: 30px;
+    height: 25px;
+}
+
+.info--bar--wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.phone--info {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phone--info img {
+    margin-right: 10px;
+}
+
+.mail--info {
+    display:flex;
+    align-items: center;
+}
+
+.mail--info img {
+    margin-right: 10px;
+}
+
+.schedule--info {
+    display:flex;
+    align-items: center;
+}
+
+.schedule--info img {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .info--bar {
+        font-size: 12px;
+    }  
+
+    .info--bar--wrapper {
+        width: 100%;
+    }
+
+    .info--bar img {
+        width: 22px;
+        height: 17px;
+    }
+    
+
+  }
