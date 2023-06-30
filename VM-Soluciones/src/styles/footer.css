@@ -1,136 +1,612 @@
 .footer--class {
     background-color: #1D2331;
-    /*border: 2px red solid;*/
     height: 38vh;
     display: flex;
-    flex-direction: column;
     color: white;
     font-family: 'Inter';
     font-weight: 500;
-    font-size: 15px;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer--title {
-    font-size: 20px;
+.footer--wrapper {
+    /* border: blue 2px solid;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+
+.logo--container--footer {
+    border-radius: 12px;
+    background: rgba(217, 217, 217, 0.24);
+    height: 70%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo--container--footer img{
+    width: 80%;
+    height: 80%;
+}
+
+.slogan--footer {
+    font-family: 'Inter';
+    color: white;
+}
+
+.footer--services {
+    /*border: purple solid 2px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    height: 80%;
+}
+
+.title--wrapper--services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.32px; 
 }
 
-.title--wrapper {
-    /*border: 2px purple solid;*/
-    display: flex;
-    flex-direction: column;
-}
-
-.footer--wrapper {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.line--design {
-    width: 80px;
-    padding: 0;
-    margin:0;
-}
-
-.footer--strip {
-    background-color: #161C27;
-    height: 4vh;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-/*Services section*/
-.footer--services {
-    /*border: 2px green solid;*/
-    display: flex;
-    flex-direction: column;
+.line--design--services {
+    width: 35%;
 }
 
 .services--list {
-    /*border: 2px red solid;*/
-    padding: 0;
-    margin: 0;
-    width: 55%;
-    line-height: 35px;
+    line-height: 30px;
 }
 
-/*Contact section*/
-.footer--contact {
-    /*border: 2px green solid;*/
+.services--list li{
+    font-size: 0.9rem;
+    list-style-type: disc;
 }
 
-.contact--list {
-    list-style: none;
-    /*border: 2px red solid;*/
-    padding: 0;
-    margin: 0;
-}
-
-.email--info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.email--info img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.home--info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.home--info img {
-    width: 25px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.phone--info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.phone--info img {
-    width: 22px;
-    height: 30px;
-}
-
-/*Links section*/
-.footer--links {
-    display: flex;
-    flex-direction: column;
-    /*border: 2px green solid;*/
-}
-
-.links--list {
-    list-style: none;
-    /*border: 2px red solid;*/
-    padding: 0;
-    margin: 0;
-    line-height: 35px; 
-}
-
-.links--list li a {
-    text-decoration: none !important;
-    color: white;
-  }
-
-  /*Footer strip section*/
-  .footer--strip {
+.footer--strip {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 12px;
-  }
+    font-size: 0.8rem;
+    background-color: #161C27;
+    width: 100%;
+}
+
+.contact--list {
+    list-style: none;
+}
+
+.footer--contact{
+    /*border: red solid 2px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 25%;
+}
+
+.title--wrapper--contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+}
+
+.line--design--contact {
+    width: 35%;
+}
+
+.contact--list p{
+    font-size: 0.9rem;
+}
+
+.email--info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.email--info img {
+    width: 15%;
+    height: 15%;
+    margin-right: 5%;
+}
+
+.home--info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home--info img {
+    width: 12%;
+    height: 12%;
+    margin-right: 5%;
+}
+
+.phone--info--footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.phone--info--footer img {
+    width: 12%;
+    height: 12%;
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 576px) {
+
+    .line--design--contact, .line--design--services{
+        display: none;
+    }
+
+    .footer--class{
+        height: 30vh;
+    }
+
+    .logo--container--footer{
+        display: none;
+    }
+
+    .footer--services{
+        width: 50%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.8rem;
+    }
+
+    .services--list{
+        line-height: 15px;
+    }
+
+    .services--list li{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 50%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.8rem;
+    }
+
+    .contact--list p{
+        font-size: 0.6rem;
+    }
+
+    .email--info img{
+        width: 18%;
+        height: 18%;
+    }
+
+    .home--info img{
+        width: 15%;
+        height: 15%;
+    }
+
+    .phone--info--footer img{
+        height: 13%;
+        width: 13%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .footer--class{
+        height: 25vh;
+    }
+
+    .logo--container--footer{
+        height: 40%;
+        width: 20%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 40%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.8rem;
+    }
+
+    .services--list{
+        line-height: 20px;
+    }
+
+    .services--list li{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 40%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.8rem;
+    }
+
+    .contact--list p{
+        font-size: 0.6rem;
+    }
+
+    .email--info img{
+        width: 16%;
+        height: 16%;
+    }
+
+    .home--info img{
+        width: 13%;
+        height: 13%;
+    }
+
+    .phone--info--footer img{
+        height: 11%;
+        width: 11%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .footer--class{
+        height: 25vh;
+    }
+
+    .footer--wrapper{
+        width: 100%;
+    }
+
+    .logo--container--footer{
+        height: 50%;
+        width: 15%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 40%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.8rem;
+    }
+
+    .services--list{
+        line-height: 20px;
+    }
+
+    .services--list li{
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 40%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.8rem;
+    }
+
+    .contact--list p{
+        font-size: 0.6rem;
+    }
+
+    .email--info img{
+        width: 18%;
+        height: 18%;
+    }
+
+    .home--info img{
+        width: 15%;
+        height: 15%;
+    }
+
+    .phone--info--footer img{
+        height: 13%;
+        width: 13%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .footer--class{
+        height: 25vh;
+    }
+
+    .logo--container--footer{
+        height: 65%;
+        width: 20%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 40%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.9rem;
+    }
+
+    .services--list{
+        line-height: 20px;
+    }
+
+    .services--list li{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 40%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.9rem;
+    }
+
+    .contact--list p{
+        font-size: 0.7rem;
+    }
+
+    .email--info img{
+        width: 18%;
+        height: 18%;
+    }
+
+    .home--info img{
+        width: 15%;
+        height: 15%;
+    }
+
+    .phone--info--footer img{
+        height: 13%;
+        width: 13%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .footer--class{
+        height: 40vh;
+    }
+
+    .logo--container--footer{
+        height: 65%;
+        width: 15%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 40%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.9rem;
+    }
+
+    .services--list{
+        line-height: 20px;
+    }
+
+    .services--list li{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 40%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.9rem;
+    }
+
+    .contact--list p{
+        font-size: 0.7rem;
+    }
+
+    .email--info img{
+        width: 18%;
+        height: 18%;
+    }
+
+    .home--info img{
+        width: 15%;
+        height: 15%;
+    }
+
+    .phone--info--footer img{
+        height: 13%;
+        width: 13%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+
+    .footer--class{
+        height: 55vh;
+    }
+
+    .footer--wrapper{
+        width: 100%;
+    }
+
+    .logo--container--footer{
+        height: 50%;
+        width: 15%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 30%;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.8rem;
+    }
+
+    .services--list{
+        line-height: 15px;
+    }
+
+    .services--list li{
+        font-size: 0.5rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 28%;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.8rem;
+    }
+
+    .contact--list p{
+        font-size: 0.5rem;
+    }
+
+    .email--info img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .home--info img{
+        width: 9%;
+        height: 9%;
+    }
+
+    .phone--info--footer img{
+        height: 8%;
+        width: 8%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) and (orientation: landscape) {
+    .footer--class{
+        height: 30vh;
+    }
+
+    .footer--wrapper{
+        width: 100%;
+        height: 90%;
+    }
+
+    .logo--container--footer{
+        height: 65%;
+        width: 15%;
+    }
+
+    .slogan--footer{
+        font-size: 0.6rem;
+    }
+
+    .footer--services{
+        width: 40%;
+        justify-content: space-between;
+    }
+
+    .title--wrapper--services{
+        font-size: 0.9rem;
+    }
+
+    .services--list{
+        line-height: 18px;
+    }
+
+    .services--list li{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .footer--contact{
+        width: 40%;
+        justify-content: space-between;
+    }
+
+    .title--wrapper--contact{
+        font-size: 0.9rem;
+    }
+    
+
+    .contact--list p{
+        font-size: 0.7rem;
+    }
+
+    .email--info img{
+        width: 12%;
+        height: 12%;
+    }
+
+    .home--info img{
+        width: 10%;
+        height: 10%;
+    }
+
+    .phone--info--footer img{
+        height: 8%;
+        width: 8%;
+    }
+
+    .footer--strip{
+        font-size: 0.6rem;
+    }
+}

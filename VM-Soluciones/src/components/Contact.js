@@ -17,7 +17,6 @@ export default function Contact(){
                     <NavBar/>
                 </div>
                  <div className="contact--image">
-                    <img src={ContactImage} alt="Contact Image" className="cover--image"/>
                     <div className="text--overlay">
                         <p>¡Póngase en contacto con nosotros!</p>
                     </div>
@@ -38,6 +37,7 @@ export default function Contact(){
                         </ul>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

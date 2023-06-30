@@ -44,6 +44,7 @@ export default function Team(){
             </div>
 
             <Strip/>
+            <Footer />
         </div>
         )
     }

@@ -50,10 +50,131 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 576px) {
+
     .about--card{
       width: 70%;
       margin-bottom: 5%;
-      height: 420px;
+      height: 60vh;
+      padding: 20px 20px 0px 20px;
     }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      
+  }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .about--card{
+      width: 70%;
+      margin-bottom: 5%;
+      height: 65vh;
+      padding: 20px 20px 0px 20px;
+    }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+  
+    .about--card{
+      width: 63%;
+      margin-bottom: 5%;
+      height: 46vh;
+      padding: 20px 20px 0px 20px;
+    }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      
+  }
+  
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .about--card{
+      width: 25%;
+      margin-bottom: 5%;
+      height: 38vh;
+      padding: 20px 20px 0px 20px;
+    }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      
+  }
+  }
+  
+
+  
+  @media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .about--card{
+      width: 25%;
+      margin-bottom: 5%;
+      height: 78vh;
+      padding: 20px 20px 0px 20px;
+    }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      
+  }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+    
+    .about--card{
+      width: 60%;
+      margin-bottom: 10%;
+      height: 80vh;
+      padding: 20px 20px 0px 20px;
+    }
+
+    .about--card img{
+      width: 25%;
+    }
+
+    .about--card h3{
+      font-size: 1rem;
+    }
+    
+    .about--card p {
+      width: 100%;
+      word-wrap: break-word;
+      font-size: 0.6rem;
+      line-height: 20px;
+      
+  }
+
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1300px) and (orientation: landscape) {
+
+    .about--card{
+      width: 25%;
+      height: 50vh;
+      padding: 20px 20px 0px 20px;
+    }
+
+    .about--card h3{
+      font-size: 1.2rem;
+    }
+    
+    .about--card p {
+      width: 100%;
+      font-size: 0.7rem;
+      line-height: 20px;
+      word-wrap: break-word;
+      
+  }
+
   }

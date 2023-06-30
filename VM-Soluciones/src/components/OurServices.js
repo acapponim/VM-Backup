@@ -20,6 +20,7 @@ export default function OurServices(){
             </div>
             <Brands/>
             <Strip/>
+            <Footer />
         </div>
     )
 }

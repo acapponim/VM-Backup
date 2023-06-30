@@ -20,7 +20,7 @@ body {
     width: 60%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
     .brands--container img {
         transform: scale(1.5);
     }
@@ -31,3 +31,45 @@ body {
     }
     
   }
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .brands--container img {
+        transform: scale(1.5);
+    }
+
+    .brands--container{
+        margin-bottom: 8%;
+        font-size: 1.8rem; 
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .brands--container{
+        font-size: 2rem; 
+    }
+
+    .brands--container img {
+        transform: scale(1.5);
+    }
+
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .brands--container{
+        font-size: 2.5rem; 
+    }
+
+    .brands--container p{
+        margin-bottom: 5%;
+    }
+
+    .brands--container img {
+        transform: scale(1.5);
+    }
+
+  }
+
+  

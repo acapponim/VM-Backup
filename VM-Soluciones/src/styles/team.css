@@ -1,7 +1,6 @@
 .team--wrapper {
     display: flex;
     flex-direction: column;
-    /*border: 2px blue solid;*/
     margin-bottom: 2%;
 }
 
@@ -25,8 +24,10 @@
     align-items: flex-start; /* Align items at the top */
 }
 
-@media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 576px) {
     .team--title {
         font-size: 1.8rem; 
     }
+    
   }

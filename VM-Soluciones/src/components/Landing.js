@@ -9,6 +9,7 @@ export default function App(){
       <div>
         <HeaderLanding />
         <MainLanding />
+        <Footer />
       </div>
     )
   }

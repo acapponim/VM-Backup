@@ -90,12 +90,31 @@
     left: 50%;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 576px) {
     .sidebar--container{
       width: 100%;
       display: flex;
       justify-content: flex-end;
       margin-right: 3%;
     }
+  }
+
+  
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .sidebar--container{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 3%;
+    }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+
+    .sidebar {
+      width: 30%;
+      overflow: auto;
+    }
+
   }
   

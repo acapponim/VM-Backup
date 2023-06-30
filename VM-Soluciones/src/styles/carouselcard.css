@@ -6,7 +6,7 @@
     width: 20%;
     background-color: #142B57;
     font-family: 'Inter';
-    height: 48vh;
+    height: 50vh;
     border-radius: 10px;
 }
 
@@ -40,9 +40,66 @@
     line-height: 25px;
 }
 
-@media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 576px) {
+    .carousel--card--container {
+        width: 70%;
+        height: 68vh;
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .carousel--card--container {
+        width: 60%;
+        height: 68vh;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     .carousel--card--container {
         width: 50%;
         height: 48vh;
     }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .carousel--card--container {
+        width: 35%;
+        height: 38vh;
+    }
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .carousel--card--container {
+      width: 35%;
+      height: 85vh;
+  }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+
+    .carousel--card--container {
+      width: 30%;
+      height: 95vh;
+  }
+
+  .text--wrapper h3 {
+    font-size: 0.7rem;
+    width: 80%;
+}
+
+.text--wrapper p {
+    font-size: 0.6rem;
+    line-height: 15px;
+}
+
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1300px) and (orientation: landscape){
+
+    .carousel--card--container {
+      width: 35%;
+      height: 65vh;
+  }
+
   }

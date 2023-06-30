@@ -18,7 +18,7 @@ export default function InfoBar(){
         </div>
         <div className="schedule--info">
           <img src={ScheduleIcon} alt="Clock"></img>
-          <p>De 6h a 20h</p>
+          <p>De 8:00 a.m. a 5:00 p.m.</p>
         </div>
       </div>
     </div>

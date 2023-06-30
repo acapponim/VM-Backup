@@ -110,10 +110,120 @@
   transform: translateY(4px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   .navlinks--list--landing {
     display: none;
   }
 
+  .logo--wrapper {
+    width: 65%;
+    height: 65%;
+  }
+
+  .logo--container img{
+    width: 100%;
+    height: 100%;
+  }
   
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .navlinks--list--landing {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+  .navlinks--list--landing li a {
+    font-size: 0.8rem;
+    font-weight: 700; 
+  }
+
+  .navlinks--list--landing li a:hover {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .navlinks--list--landing li a {
+    font-size: 0.9rem;
+    font-weight: 700; 
+  }
+
+  .navlinks--list--landing li a:hover {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1700px) {
+
+  .hero--cover {
+    height: 65vh;
+}
+
+  .navlinks--list--landing li a {
+    font-size: 0.9rem;
+    font-weight: 700; 
+  }
+
+  .navlinks--list--landing li a:hover {
+    font-size: 1rem;
+  }
+
+  .logo--container{
+    height: 70%;
+  }
+
+  .logo--wrapper {
+    width: 20%;
+    height: 100%;
+    margin-bottom: 1%;
+  }
+
+  .logo--wrapper img{
+    width: 85%;
+  }
+
+  .slogan {
+    font-family: 'Inter';
+    color: white;
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/*LANDSCAPE*/
+@media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+  .hero--cover{
+    height: 64vh;
+  }
+  
+  .navbar--container--landing {
+    height: 12vh;
+  }
+ 
+  .logo--wrapper {
+    width: 14%;
+    height: 10%;
+    margin-bottom: 1%;
+  }
+
+  .logo--container img{
+    width: 100%;
+    height: 100%;
+  }
+  .slogan{
+    font-size: 0.6rem;
+  }
+
+  #contactus-btn{
+    width: 100%;
+    height: 10vh;
+    font-size: 0.7rem;
+  }
 }

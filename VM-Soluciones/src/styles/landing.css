@@ -74,6 +74,7 @@ body {
     margin-top: 6%;
 }
 
+
 .brands--section {
     margin-bottom: 6%;
 }
@@ -127,7 +128,21 @@ right: 0;
   transform: translateY(4px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
+
+    .main--landing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our--services--section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
     
     .info--about--wrapper {
         display: flex;
@@ -159,7 +174,7 @@ right: 0;
     
     .info--about--top img{
         /*border: purple 2px solid;*/
-        width: 230px;
+        width: 52%;
     }
 
     #ourstory-btn-mobile{
@@ -214,4 +229,223 @@ right: 0;
     }
 
     
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    
+    .info--about--wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /*border: rgb(255, 220, 105) 2px solid;*/
+        color: #383838;
+        font-family: 'Inter';
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+    
+    .info--about--top {
+        /*border: yellow 2px solid;*/
+        display: flex;
+        flex-direction: row;
+        padding: 1%;
+    }
+    
+    .aboutus--section--title {
+        margin-bottom: 0;
+        /*border: 2px solid blue;*/
+    }
+    
+    .about--top--description {
+        width: 95%;
+        /*border: 2px green solid;*/
+    }
+    
+    .info--about--top img{
+       /* border: purple 2px solid;*/
+        width: 80%;
+    }
+
+
+    .info--about--bottom {
+       /* border: red 2px solid;*/
+        margin-top: 2%;
+        padding: 1%;
+    }
+    
+    
+    .info--about--bottom img {
+       /* border: purple 2px solid;*/
+        width: 45%;
+    }
+
+    .paragraph--2--mobile{
+        /*display: flex;
+        width: 45%;
+        margin-bottom: 0;
+        margin-left: 6%;*/
+    }
+
+    .paragraph--3--mobile{
+        /*display: flex;
+        margin: 0;*/
+    }
+
+    .info--about--bottom img{
+        width: 100%;
+    }
+
+    .paragraph--1 {
+        font-size: 0.7rem;
+        line-height: 24px;
+    }
+
+    .paragraph--2, .paragraph--3{
+        font-size: 0.7rem;
+        line-height: 20px;
+    }
+
+    .paragraph--wrappers{
+        width: 100%;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .info--about--wrapper {
+        width: 95%;
+    }
+    
+    .info--about--top img, .info--about--bottom img {
+        max-width: 49%;
+        height: auto;
+    }
+    
+    .about--top--description{
+        margin-left: 4%;
+    }
+
+    .paragraph--1{
+        margin-bottom: 10%;
+    }
+    
+    .paragraph--2, .paragraph--3 {
+        width: 90%;
+        line-height: 20px;
+    }
+
+    .info--about--bottom{
+        margin-right: 5%;
+    }
+
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .info--about--wrapper {
+        width: 85%;
+    }
+    
+    .info--about--top img, .info--about--bottom img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about--top--description{
+        margin-left: 4%;
+    }
+
+    .paragraph--1{
+        margin-bottom: 10%;
+    }
+    
+    .paragraph--2, .paragraph--3 {
+        width: 90%;
+        margin-left: 10%;
+        line-height: 25px;
+    }
+
+    .info--about--bottom{
+        margin-right: 5%;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1700px) {
+
+    .info--about--wrapper {
+        width: 65%;
+    }
+    
+    .info--about--top img, .info--about--bottom img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about--top--description{
+        margin-left: 2%;
+    }
+
+    .paragraph--1{
+        margin-bottom: 10%;
+        width: 80%;
+    }
+    
+    .paragraph--2, .paragraph--3 {
+        width: 90%;
+        margin-left: 20%;
+        line-height: 25px;
+    }
+
+    .info--about--bottom{
+        margin-right: 5%;
+    }
+
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+
+    .main--landing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our--services--section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .info--about--wrapper {
+        width: 95%;
+    }
+    
+    .info--about--top img, .info--about--bottom img {
+        max-width: 49%;
+        height: auto;
+    }
+    
+    .about--top--description{
+        margin-left: 4%;
+    }
+
+    .paragraph--1{
+        margin-bottom: 10%;
+    }
+    
+    .paragraph--2, .paragraph--3 {
+        width: 90%;
+        line-height: 20px;
+    }
+
+    .info--about--bottom{
+        margin-right: 5%;
+    }
+
+
   }

@@ -48,7 +48,7 @@ export default function AboutUs(){
             </div>
             <Brands/>
             <Strip/>
-            
+            <Footer />
         </div>
     )
 }

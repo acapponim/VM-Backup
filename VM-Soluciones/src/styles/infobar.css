@@ -56,9 +56,9 @@ body {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
     .info--bar {
-        font-size: 12px;
+        font-size: 0.6rem;
     }  
 
     .info--bar--wrapper {
@@ -71,4 +71,76 @@ body {
     }
     
 
+  }
+
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .info--bar {
+        font-size: 0.8rem;
+    }  
+
+    .info--bar--wrapper {
+        width: 100%;
+    }
+
+    .info--bar img {
+        width: 22px;
+        height: 17px;
+    }
+    
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .info--bar {
+        font-size: 0.9rem;
+    }  
+
+    .info--bar--wrapper {
+        width: 100%;
+    }
+
+    .info--bar img {
+        width: 25px;
+        height: 20px;
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .info--bar {
+        font-size: 1rem;
+    }  
+
+    .info--bar--wrapper {
+        width: 100%;
+    }
+
+    .info--bar img {
+        width: 28px;
+        height: 23px;
+    }
+
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .info--bar {
+        font-size: 1rem;
+    }  
+
+    .info--bar--wrapper {
+        width: 100%;
+    }
+
+    .info--bar img {
+        width: 28px;
+        height: 23px;
+    }
+
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+    .info--bar{
+        height: 8vh;
+    }
+    
   }

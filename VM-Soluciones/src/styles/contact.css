@@ -1,24 +1,23 @@
 .contact--image {
-    position: relative;
-}
-
-.contact--image img{
-    height: auto;
-    display: block;
     width: 100%;
+    height: 40vh;
+    display: flex;
+    background-image: url("../images/contact-image.svg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 15vh;
 }
 
 .text--overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: #fff;
 }
 
 .text--overlay p {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-family: 'Roboto Slab'; 
     font-weight: 500; 
 }
@@ -58,8 +57,95 @@
     list-style: none;
 }
 
-@media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 576px) {
+
     .info--card {
         display: none;
     }
+
+    .contact--image{
+        height: 15vh;
+    }
+
+    .text--overlay p {
+        font-size: 1.2rem;
+    }
+    
   }
+
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .info--card {
+        display: none;
+    }
+
+    .contact--image{
+        height: 20vh;
+    }
+
+    .text--overlay p {
+        font-size: 1.5rem;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .contact--image{
+        height: 20vh;
+    }
+
+    .info--card {
+        display: none;
+    }
+
+    .text--overlay p {
+        font-size: 1.5rem;
+    }
+
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .contact--image{
+        height: 20vh;
+    }
+
+    .text--overlay p {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1700px) {
+    .contact--image{
+        height: 30vh;
+    }
+
+    .contact--image{
+        margin-top: 20vh;
+    }
+
+    .text--overlay p {
+        font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 800px) and (orientation: landscape) {
+
+    .contact--image{
+        height: 25vh;
+    }
+
+    .contact--image{
+        margin-top: 20vh;
+    }
+
+    .text--overlay p {
+        font-size: 1.5rem;
+    }
+
+    
+
+  }
+
