@@ -413,6 +413,10 @@
         height: 40vh;
     }
 
+    .footer--wrapper{
+        width: 100%;
+    }
+
     .logo--container--footer{
         height: 65%;
         width: 15%;
@@ -423,7 +427,7 @@
     }
 
     .footer--services{
-        width: 40%;
+        width: 30%;
     }
 
     .title--wrapper--services{
@@ -440,7 +444,7 @@
     }
 
     .footer--contact{
-        width: 40%;
+        width: 30%;
     }
 
     .title--wrapper--contact{
@@ -452,18 +456,18 @@
     }
 
     .email--info img{
-        width: 18%;
-        height: 18%;
+        width: 6%;
+        height: 6%;
     }
 
     .home--info img{
-        width: 15%;
-        height: 15%;
+        width: 5%;
+        height: 5%;
     }
 
     .phone--info--footer img{
-        height: 13%;
-        width: 13%;
+        height: 5%;
+        width: 5%;
     }
 
     .footer--strip{
