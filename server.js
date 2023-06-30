@@ -1,11 +1,15 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 
 const app = express();
-const port = 3000; // Choose a suitable port for your server
+const port = 3001; // Change the port to 3001
 
 // Enable JSON parsing for request bodies
 app.use(express.json());
+
+// Enable CORS
+app.use(cors());
 
 // Define a route to handle form submissions
 app.post('/send-email', (req, res) => {
@@ -13,19 +17,19 @@ app.post('/send-email', (req, res) => {
 
   // Create a Nodemailer transporter
   const transporter = nodemailer.createTransport({
-    // Update the SMTP configuration with your own email provider details
-    // For example, using Gmail:
-    service: 'Gmail',
+    host: 'mail.privateemail.com',
+    port: 465,
+    secure: true,
     auth: {
-      user: 'prismwavesoftware@gmail.com',
-      pass: 'Rra!nI?tE61*57',
+      user: 'info@vmsoluciones.net',
+      pass: 'vmsoluciones2023',
     },
   });
 
   // Prepare the email content
   const mailOptions = {
-    from: email, // Sender's email address
-    to: 'discipio28@hotmail.es', // Recipient's email address
+    from: 'info@vmsoluciones.net', // Sender's email address
+    to: 'info@vmsoluciones.net', // Recipient's email address
     subject: 'Contact Form Submission',
     text: `
       Nombre: ${name}
