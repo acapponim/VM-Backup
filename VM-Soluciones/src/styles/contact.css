@@ -57,6 +57,25 @@
     list-style: none;
 }
 
+.phone--info--bar {
+    display: flex;
+}
+
+.phone--info--bar img{
+    margin-right: 15px;
+    width: 12%;
+}
+
+.email--info--bar {
+    display: flex;
+}
+
+.email--info--bar img{
+    margin-right: 15px;
+    width: 15%;
+}
+
+
 
   @media screen and (max-width: 576px) {
 

@@ -6,10 +6,22 @@
 
   .strip--image {
     width: 100%;
-    object-fit: cover;
   }
   
   .strip--container.visible {
     opacity: 1;
     transform: translateX(0%);
+  }
+
+  @media screen and (max-width: 576px) {
+
+    .strip--container{
+      width: 98%;
+    }
+
+    .strip--image {
+      height: 95%;
+      width: 100%;
+    }
+    
   }

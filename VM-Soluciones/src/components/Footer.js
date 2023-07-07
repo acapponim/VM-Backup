@@ -8,6 +8,17 @@ import LogoImageFooter from "../images/vm-logo.svg"
 import "../styles/footer.css";
 
 export default function Footer(){
+  const handlePhoneClick = () => {
+    // Open WhatsApp window
+    window.open('https://wa.me/50689605229', '_blank');
+  };
+  
+  const handleEmailClick = () => {
+    const mailtoLink = `mailto:info@vmsoluciones.net` +
+    `?subject=${encodeURIComponent('Contacto - VM Soluciones')}`
+    window.location.href = mailtoLink;
+  };
+  
     return (
       <footer className="footer--class">
         <div className="footer--wrapper">
@@ -33,7 +44,7 @@ export default function Footer(){
               <img className="line--design--contact" src={LineImage} alt="Line Design"></img>
             </div>
             <ul className="contact--list">
-              <li><div className="email--info">
+              <li><div className="email--info"  onClick={handleEmailClick}>
                 <img src={MailIcon} alt="Mail"></img>
                 <p>info@vmsoluciones.net</p>
               </div></li>
@@ -41,8 +52,8 @@ export default function Footer(){
                 <img src={HomeIcon} alt="Home"></img>
                 <p>Piedades de Santa Ana</p>
               </div></li>
-              <li><div className="phone--info--footer">
-                <img src={PhoneIcon} alt="Phone"></img>
+              <li><div className="phone--info--footer" onClick={handlePhoneClick}>
+                <img src={PhoneIcon} alt="Phone" ></img>
                 <p>+506 8960-5229</p>
               </div></li>
             </ul>

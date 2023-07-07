@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import "../styles/landing.css";
 
 export default function App(){
+
     return (
       <div>
         <HeaderLanding />

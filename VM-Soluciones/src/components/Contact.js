@@ -10,6 +10,18 @@ import "../styles/contact.css"
 import "../styles/infobarnavbar.css"
 
 export default function Contact(){
+
+    const handlePhoneClick = () => {
+        // Open WhatsApp window
+        window.open('https://wa.me/50689605229', '_blank');
+      };
+      
+      const handleEmailClick = () => {
+        const mailtoLink = `mailto:info@vmsoluciones.net` +
+        `?subject=${encodeURIComponent('Contacto - VM Soluciones')}`
+        window.location.href = mailtoLink;
+      };
+
     return (
             <div className="contactpage--container">
                 <div className="infobar--navbar">
@@ -28,11 +40,11 @@ export default function Contact(){
                     </div>
                     <div className="contact--wrapper">
                         <ul className="contact--info">
-                            <li><div className="email--info">
+                            <li><div className="email--info--bar" onClick={handleEmailClick}>
                                 <img src={MailIcon} alt="Mail"></img>
                                 <p>info@vmsoluciones.net</p></div></li>
-                            <li><div className="phone--info">
-                            <img src={PhoneIcon} alt="Phone"></img>
+                            <li><div className="phone--info--bar">
+                            <img src={PhoneIcon} alt="Phone" onClick={handlePhoneClick}></img>
                             <p>+506 8960-5229</p></div></li>
                         </ul>
                     </div>
